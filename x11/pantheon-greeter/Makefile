@@ -8,7 +8,7 @@ WWW=		https://github.com/elementary/greeter
 
 LICENSE=	GPLv3
 
-LIB_DEPENDS= \
+LIB_DEPENDS=\
 		libgranite.so:x11-toolkits/granite \
 		libhandy-1.so:x11-toolkits/libhandy \
 		libaccountsservice.so:sysutils/accountsservice \
@@ -17,9 +17,7 @@ LIB_DEPENDS= \
 		libgee-0.8.so:devel/libgee \
 		libgraphene-1.0.so:graphics/graphene
 
-RUN_DEPENDS=	${LOCALBASE}/lib/libgranite.so:${PORTSDIR}/x11-toolkits/granite
-
-USES=			meson ninja vala gnome
+USES=			meson ninja vala gnome gettext
 MESON_ARGS=		--prefix=${PREFIX}
 MESON_BUILD_DIR=	build
 USE_GNOME=		glib20 gtk30

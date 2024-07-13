@@ -1,1 +1,2 @@
-Login and Lock Screen greeter for elementary OS and Pantheon, using LightDM
+Login and Lock Screen greeter for Pantheon desktop environment. Built on top of
+LightDM.
